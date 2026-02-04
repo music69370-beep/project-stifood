@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Street Food Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .food-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1>ຄວາຍ</h1>
-    <h1>ຄວາຍ</h1>
-    <h1>ຄວາຍ</h1>
-    <h1>ຄວາຍ</h1>
-    <h1>ຄວາຍ</h1>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">StreetFood TH</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#">หน้าแรก</a>
+                <a class="nav-link" href="#menu">เมนูอาหาร</a>
+                <a class="nav-link" href="#">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">รสชาติสตรีทฟู้ดแท้ๆ</h1>
+            <p class="lead">รวมเมนูเด็ดจากข้างทาง สด สะอาด อร่อยระดับตำนาน</p>
+            <a href="#menu" class="btn btn-warning btn-lg">ดูเมนูอาหาร</a>
+        </div>
+    </header>
+
+    <section id="menu" class="container my-5">
+        <h2 class="text-center mb-4">เมนูแนะนำ</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card food-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="ผัดไทย">
+                    <div class="card-body">
+                        <h5 class="card-title">ผัดไทยกุ้งสด</h5>
+                        <p class="card-text">เส้นเหนียวนุ่ม ซอสเข้มข้น กุ้งตัวโตๆ</p>
+                        <span class="text-primary fw-bold">60 บาท</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card food-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21bc4a4f8?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="ส้มตำ">
+                    <div class="card-body">
+                        <h5 class="card-title">ส้มตำไทยปู</h5>
+                        <p class="card-text">รสชาติจัดจ้าน แซ่บถึงใจ วัตถุดิบสดใหม่ทุกวัน</p>
+                        <span class="text-primary fw-bold">50 บาท</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card food-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1562607311-283a241903eb?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="ไก่ย่าง">
+                    <div class="card-body">
+                        <h5 class="card-title">ไก่ย่างสมุนไพร</h5>
+                        <p class="card-text">เนื้อนุ่มหนังกรอบ หอมกลิ่นสมุนไพรเผาเตาถ่าน</p>
+                        <span class="text-primary fw-bold">120 บาท</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2026 StreetFood TH Project - Mid-keochanda</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
